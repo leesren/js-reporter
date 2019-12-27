@@ -1,0 +1,36 @@
+{
+  "author": {
+    "name": "leesren"
+  },
+  "description": "WEB前端监控日志上报JSSDK",
+  "devDependencies": {
+    "terser-webpack-plugin": "2.3.1",
+    "ts-loader": "6.2.1",
+    "typescript": "3.7.4",
+    "webpack": "4.41.4",
+    "webpack-cli": "3.3.10"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "jssdk",
+    "log",
+    "reporter",
+    "WEB前端监控"
+  ],
+  "license": "ISC",
+  "main": "dist/main.js",
+  "name": "js-reporter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leesren/js-reporter.git"
+  },
+  "scripts": {
+    "start": "webpack --mode=development --watch",
+    "build": "tsc && webpack --mode=none",
+    "lint": "eslint --ext .js src test",
+    "test": "jest --config=jest.config.js"
+  },
+  "version": "1.0.1"
+}
